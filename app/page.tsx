@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, Menu, X, ArrowRight, ArrowUpRight, MessageCircle } from 'lucide-react';
+import { Github, Mail, Menu, X, ArrowRight, ArrowUpRight, MessageCircle, Globe } from 'lucide-react';
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,12 +16,14 @@ export default function Portfolio() {
   }, []);
 
   const skills = [
-    { category: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS', 'SEO'] },
-    { category: 'Backend', items: ['Node.js', 'PHP', 'Python', 'REST API'] },
-    { category: 'Database', items: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase'] },
-    { category: 'DevOps/Infra', items: ['Git', 'Docker', 'Vercel', 'Cloudflare', 'DNS', 'Supabase', 'cPanel', 'Plesk'] },
-    { category: 'Email/IT', items: ['Mail Systems', 'Email Migration', 'Microsoft 365'] },
-    { category: 'Creative Tools', items: ['Figma', 'Blender', 'Canva'] }
+    { category: 'Frontend', items: ['React', 'Next.js (App Router)', 'TypeScript', 'Tailwind CSS', 'CSS Modules', 'Vite'] },
+    { category: 'Backend/API', items: ['Node.js', 'Express.js', 'REST API', 'JWT Auth', 'bcrypt', 'Multer'] },
+    { category: 'Data Layer', items: ['PostgreSQL (Neon)', 'MySQL', 'LibSQL/SQLite', 'Drizzle ORM', 'Sequelize'] },
+    { category: 'Cloud & Deploy', items: ['Vercel', 'Render', 'Cloudflare DNS', 'cPanel', 'Plesk', 'Nginx'] },
+    { category: 'Business Systems', items: ['Admin Dashboard', 'E-commerce Flow', 'Quotation Workflow', 'Excel Export', 'Role-based Access'] },
+    { category: 'Integrations', items: ['Cloudinary', 'SendGrid', 'Google Maps API', 'SheetJS/XLSX', 'LINE OA'] },
+    { category: 'Quality & Ops', items: ['Smoke Testing', 'Release Checklist', 'Deployment Hardening', 'API Monitoring'] },
+    { category: 'Tools', items: ['Git/GitHub', 'Postman', 'VS Code', 'Figma', 'Blender', 'Canva'] }
   ];
 
   const experiences = [
@@ -29,40 +31,62 @@ export default function Portfolio() {
       year: '2023 - Present',
       title: 'Freelance Developer',
       company: 'Self-Employed',
-      description: 'Full-stack web development for diverse clients including E-commerce platforms, landing pages, and dashboard systems.'
+      description: 'Built and maintained full-stack platforms for Thai SMEs, including E-commerce, real estate, and healthcare systems with production deployments and admin workflows.'
     },
     {
       year: '2022 - 2023',
       title: 'Junior Developer',
       company: 'RCSA Drone Thailand',
-      description: 'Developed drone light show lettering/formation systems, designed flight plans for show performances, and built Blender add-ons/scripts for show planning, plus created 3D content for project presentations.'
+      description: 'Developed drone-show formation and flight-planning tools, plus Blender add-ons for automated choreography and 3D presentation pipelines.'
     }
   ];
 
   const projects = [
     {
+      title: 'Closet Go Rental Platform',
+      description: 'End-to-end clothing rental platform with membership tiers, cart/checkout, PromptPay proof upload, and admin operations for inventory, orders, and shipping (deployed at closetgostudio.com).',
+      tech: ['React', 'Vite', 'Node.js', 'Express', 'MySQL', 'JWT', 'Cloudinary', 'cPanel'],
+      url: 'https://closetgostudio.com',
+      color: 'from-fuchsia-500 to-rose-500'
+    },
+    {
+      title: 'Lucky Commit Portfolio',
+      description: 'Personal portfolio website showcasing selected projects, technical stack, and availability for freelance and full-time opportunities.',
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+      url: 'https://lucky-commit-portfolio.vercel.app/',
+      color: 'from-cyan-500 to-sky-500'
+    },
+    {
+      title: 'Bangkok WYNN Electrical Platform',
+      description: 'B2B/B2C product platform with catalog filtering, quote/order flow, account system, admin panels, and technical document distribution for engineering customers.',
+      tech: ['Next.js', 'React', 'TypeScript', 'Drizzle ORM', 'LibSQL', 'Tailwind CSS'],
+      color: 'from-violet-500 to-indigo-500'
+    },
+    {
       title: 'PhuketKeys.com',
-      description: 'Deployed website for Phuket Keys, focused on clear property information and fast loading.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO'],
+      description: 'Production real-estate platform with listing search, customer accounts, role-based admin dashboard, media management, and analytics-ready back-office tools.',
+      tech: ['Next.js', 'TypeScript', 'Express', 'PostgreSQL', 'Cloudinary', 'Recharts'],
+      url: 'https://phuketkeys.com',
       color: 'from-emerald-500 to-teal-500'
     },
     {
-      title: 'Roundcube to Microsoft 365 Migration',
-      description: 'Migrated around 200,000 hotel booking emails from Roundcube webmail to Microsoft 365 and repointed the domain DNS via Cloudflare.',
-      tech: ['Roundcube', 'Microsoft 365', 'DNS', 'Cloudflare'],
-      color: 'from-amber-500 to-orange-500'
-    },
-    {
       title: 'Langa Care (Internal)',
-      description: 'Internal screening and health tracking system for Langa health center, focused on 35+ demographics with real-time dashboards and field-ready risk maps.',
+      description: 'Internal screening and health-tracking system with real-time dashboards, appointment handling, and location-aware field support for community healthcare operations.',
       tech: ['Node.js', 'Express', 'MySQL', 'Sequelize', 'JWT', 'bcrypt', 'JavaScript', 'Chart.js', 'Google Maps', 'Flatpickr', 'Choices.js', 'SheetJS', 'PWA'],
       color: 'from-sky-500 to-cyan-500'
     },
     {
       title: 'Langa Health Center',
-      description: 'Public health center website (langashph.com) with online queue booking for 3 services, admin content/booking management, and service worker caching for faster access.',
+      description: 'Public healthcare website with online booking for 3 services, admin content management, and service worker caching for better performance in low-connectivity areas.',
       tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'MySQL', 'Service Worker'],
+      url: 'https://langashph.com',
       color: 'from-cyan-500 to-blue-500'
+    },
+    {
+      title: 'Roundcube to Microsoft 365 Migration',
+      description: 'Migrated ~200,000 business emails from Roundcube to Microsoft 365 and completed DNS cutover via Cloudflare with minimal service disruption.',
+      tech: ['Roundcube', 'Microsoft 365', 'DNS', 'Cloudflare'],
+      color: 'from-amber-500 to-orange-500'
     }
   ];
 
@@ -130,7 +154,7 @@ export default function Portfolio() {
                 commit
               </h1>
               <p className="text-xl text-gray-400 mb-12 leading-relaxed max-w-xl">
-                Crafting digital experiences through clean code and modern design. Specializing in full-stack web development with a focus on performance and user experience.
+                Building production-ready web products from idea to deployment. Specialized in full-stack systems, admin workflows, and scalable architectures for SMEs.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
@@ -187,10 +211,22 @@ export default function Portfolio() {
                         {project.description}
                       </p>
                     </div>
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 border border-cyan-500/30 flex items-center justify-center group-hover:bg-cyan-500 group-hover:border-cyan-500 transition-all">
-                        <ArrowUpRight className="group-hover:text-[#0a0e1a]" size={20} />
-                      </div>
+                    <div className="flex-shrink-0 relative z-10">
+                      {project.url ? (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`Open ${project.title}`}
+                          className="w-12 h-12 border border-cyan-500/30 inline-flex items-center justify-center group-hover:bg-cyan-500 group-hover:border-cyan-500 transition-all"
+                        >
+                          <ArrowUpRight className="group-hover:text-[#0a0e1a]" size={20} />
+                        </a>
+                      ) : (
+                        <div className="w-12 h-12 border border-cyan-500/30 flex items-center justify-center group-hover:bg-cyan-500 group-hover:border-cyan-500 transition-all">
+                          <ArrowUpRight className="group-hover:text-[#0a0e1a]" size={20} />
+                        </div>
+                      )}
                     </div>
                   </div>
                   
@@ -206,7 +242,7 @@ export default function Portfolio() {
                   </div>
                 </div>
                 
-                <div className={`absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l ${project.color} opacity-0 group-hover:opacity-10 transition-opacity`} />
+                <div className={`absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l ${project.color} opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none`} />
               </div>
             ))}
           </div>
@@ -221,10 +257,10 @@ export default function Portfolio() {
               <div className="text-cyan-400 text-sm tracking-[0.3em] mb-4 font-light">ABOUT ME</div>
               <h2 className="text-5xl lg:text-6xl font-light mb-8">Background</h2>
               <p className="text-xl text-gray-400 leading-relaxed mb-6">
-                Full-stack developer with a passion for creating seamless digital experiences. Graduated from Garden City University with a Bachelor&apos;s in Computer Applications.
+                Full-stack developer focused on practical business systems: e-commerce operations, property platforms, and service booking solutions.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed">
-                Currently working as a freelance developer, delivering custom web solutions for clients worldwide. Previously contributed to drone technology applications at RCSA Drone Thailand.
+                Currently available for freelance projects and full-time roles. I handle end-to-end delivery including planning, development, deployment, and production support.
               </p>
             </div>
 
@@ -276,7 +312,7 @@ export default function Portfolio() {
               <div className="text-cyan-400 text-sm tracking-[0.3em] mb-4 font-light">GET IN TOUCH</div>
               <h2 className="text-5xl lg:text-6xl font-light mb-8">Let&apos;s Work<br />Together</h2>
               <p className="text-xl text-gray-400 leading-relaxed mb-12">
-                Available for freelance projects and full-time opportunities. Feel free to reach out if you&apos;d like to collaborate.
+                Open for freelance projects and full-time opportunities. Feel free to reach out for collaboration, product builds, or ongoing technical support.
               </p>
               
               <div className="space-y-6">
@@ -292,7 +328,7 @@ export default function Portfolio() {
                   <div className="text-xs text-gray-500 tracking-wider mb-2">STATUS</div>
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse" />
-                    <span className="text-gray-300">Available for work</span>
+                    <span className="text-gray-300">Available: freelance + full-time</span>
                   </div>
                 </div>
               </div>
@@ -331,6 +367,17 @@ export default function Portfolio() {
                 </div>
                 <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={20} />
               </a>
+
+              <a 
+                href="https://lucky-commit-portfolio.vercel.app/"
+                className="group flex items-center justify-between p-6 bg-[#0f1420] border border-cyan-500/10 hover:border-cyan-400 transition-all"
+              >
+                <div className="flex items-center">
+                  <Globe className="mr-4 text-cyan-400" size={24} />
+                  <span className="text-lg">Portfolio</span>
+                </div>
+                <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={20} />
+              </a>
             </div>
           </div>
         </div>
@@ -340,7 +387,7 @@ export default function Portfolio() {
       <footer className="py-12 px-6 lg:px-8 border-t border-cyan-500/10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
-            © 2025 lucky.commit — Full-stack Developer
+            © 2026 lucky.commit — Full-stack Developer
           </div>
           <div className="text-gray-500 text-sm">
             Built with React + Tailwind CSS
