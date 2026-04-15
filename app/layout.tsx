@@ -1,10 +1,31 @@
 import type { Metadata } from 'next'
+import { Manrope, Space_Grotesk } from 'next/font/google'
 import './globals.css'
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+})
 
 export const metadata: Metadata = {
   title: 'lucky.commit | Full-stack Developer',
-  description: 'Full-stack web developer specializing in React, TypeScript, Next.js, and modern web technologies.',
-  keywords: ['web developer', 'full-stack', 'React', 'Next.js', 'TypeScript', 'portfolio'],
+  description:
+    'Full-stack developer portfolio focused on production-ready web products, business systems, and polished digital experiences.',
+  keywords: [
+    'web developer',
+    'full-stack',
+    'React',
+    'Next.js',
+    'TypeScript',
+    'portfolio',
+    'frontend',
+    'backend',
+  ],
 }
 
 export default function RootLayout({
@@ -14,7 +35,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${manrope.variable} ${spaceGrotesk.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
