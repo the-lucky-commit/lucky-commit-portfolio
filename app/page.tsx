@@ -372,53 +372,53 @@ const copy = {
     languageLabel: 'ภาษา',
     menuOpen: 'เปิดเมนู',
     menuClose: 'ปิดเมนู',
-    availabilityBadge: 'พร้อมรับงาน freelance และงานพัฒนาผลิตภัณฑ์',
-    heroTitle: 'พัฒนาเว็บโปรดักต์ที่ดูดี ใช้งานง่าย และพร้อมใช้งานจริงใน production',
+    availabilityBadge: 'เปิดรับงานพัฒนาเว็บและผลิตภัณฑ์ดิจิทัล',
+    heroTitle: 'ออกแบบและพัฒนาเว็บโปรดักต์ที่พร้อมใช้งานจริงในระดับ production',
     heroDescription:
-      'ผมออกแบบและพัฒนาระบบ full-stack สำหรับธุรกิจที่ต้องการมากกว่า landing page ที่ดูดีเพียงอย่างเดียว โดยให้ความสำคัญกับ UX ที่ใช้งานได้จริง workflow ฝั่งแอดมินที่ชัดเจน และการส่งมอบงานอย่างเป็นระบบตั้งแต่เริ่มต้นจนเปิดใช้งาน',
+      'ผมออกแบบและพัฒนาระบบเว็บสำหรับธุรกิจที่ต้องการมากกว่าหน้าเว็บไซต์ที่ดูดี โดยมุ่งเน้น UX ที่ชัดเจน กระบวนการทำงานหลังบ้านที่รองรับการใช้งานจริง และการส่งมอบงานอย่างเป็นระบบตั้งแต่แนวคิดจนถึงการเปิดใช้งาน',
     heroTags: ['Next.js', 'TypeScript', 'Node.js', 'ระบบธุรกิจ'],
     heroPrimaryCta: 'ดูผลงาน',
     heroSecondaryCta: 'เริ่มพูดคุย',
     profileAlt: 'ภาพโปรไฟล์ Lucky Commit',
     basedIn: 'ที่อยู่ปัจจุบัน',
     workingStyle: 'ลักษณะการทำงาน',
-    workingStyleValue: 'ทำงานเป็นระบบ รวดเร็ว และใส่ใจรายละเอียด',
+    workingStyleValue: 'ทำงานเป็นระบบ สื่อสารชัดเจน และใส่ใจรายละเอียด',
     projectsEyebrow: 'ผลงานที่คัดมา',
-    projectsTitle: 'ผลงานที่ออกแบบมาเพื่อแก้ปัญหาการใช้งานจริงของธุรกิจ',
+    projectsTitle: 'ผลงานที่พัฒนาจากโจทย์การใช้งานจริงของธุรกิจ',
     projectsIntro:
-      'ส่วนนี้อัปเดตตามโปรเจกต์ที่อยู่ใน workspace ปัจจุบันของผม และคัดงานจาก archive บางส่วนที่ยังสะท้อนแนวทางการทำงานที่ผมถนัดได้ชัดเจน',
+      'ผลงานส่วนนี้คัดเลือกจากโปรเจกต์ที่กำลังพัฒนาอยู่ในปัจจุบัน และงานสำคัญจาก archive เพื่อสะท้อนแนวทางการออกแบบระบบและการส่งมอบงานที่ผมถนัด',
     activeNow: 'กำลังพัฒนาอยู่ตอนนี้',
     selectedArchive: 'ผลงานจาก archive ที่ยังอยากนำเสนอ',
     whyItMatters: 'คุณค่าของงานชิ้นนี้',
     visitProject: 'เปิดดูโปรเจกต์',
     availableOnRequest: 'สามารถขอดูรายละเอียดเพิ่มเติมได้',
     aboutEyebrow: 'เกี่ยวกับ',
-    aboutTitle: 'ผมให้ความสำคัญกับทั้งการคิดเชิงระบบและการลงมือทำจริง',
+    aboutTitle: 'ผมให้ความสำคัญกับทั้งการคิดเชิงระบบและการส่งมอบงานที่ชัดเจน',
     aboutBodyOne:
-      'งานของผมอยู่กึ่งกลางระหว่างความเข้าใจเชิงโปรดักต์และการพัฒนาเชิงเทคนิค ผมให้ความสำคัญกับหน้าตาของระบบ แต่ให้ความสำคัญมากยิ่งกว่าว่าทีมงานจะใช้งานระบบนั้นได้จริงอย่างราบรื่นในทุกวัน',
+      'แนวทางการทำงานของผมอยู่กึ่งกลางระหว่างความเข้าใจเชิงผลิตภัณฑ์และการพัฒนาเชิงเทคนิค ผมให้ความสำคัญกับภาพลักษณ์ของระบบ แต่ให้ความสำคัญมากยิ่งกว่าว่าทีมงานจะสามารถใช้งานได้จริงอย่างมีประสิทธิภาพในทุกวัน',
     aboutBodyTwo:
-      'สิ่งนี้มักหมายถึงการนำ requirement ที่ซับซ้อนมาจัดระเบียบใหม่ ให้กลายเป็น UX ที่เข้าใจง่าย workflow ฝั่งแอดมินที่ใช้งานสะดวก และโค้ดที่ดูแลต่อได้หลังระบบขึ้นใช้งานจริง',
-    aboutCardOneTitle: 'ส่งมอบงานด้วยมุมมองแบบ product',
+      'โดยทั่วไป งานลักษณะนี้หมายถึงการนำ requirement ที่ซับซ้อนมาจัดโครงสร้างใหม่ ให้กลายเป็น UX ที่เข้าใจง่าย กระบวนการทำงานหลังบ้านที่เหมาะกับการใช้งานจริง และโค้ดที่สามารถดูแลต่อได้หลังเปิดระบบ',
+    aboutCardOneTitle: 'ทำงานด้วยมุมมองแบบ product',
     aboutCardOneBody:
-      'ผมพิจารณา flow ความชัดเจน และคุณค่าทางธุรกิจก่อนลงมือเขียนโค้ดเสมอ',
-    aboutCardTwoTitle: 'ลงมือทำได้ครบตั้งแต่ต้นจนจบ',
+      'ผมพิจารณา flow ความชัดเจน และคุณค่าทางธุรกิจก่อนเริ่มลงมือพัฒนาเสมอ',
+    aboutCardTwoTitle: 'รับผิดชอบงานได้ครบตลอดกระบวนการ',
     aboutCardTwoBody:
-      'ทั้ง frontend, backend, deployment, การแก้ปัญหา และการดูแลหลังขึ้นระบบ ยังอยู่ในขอบเขตงานที่ผมรับผิดชอบได้',
+      'ทั้ง frontend, backend, deployment, การแก้ปัญหา และการดูแลหลังขึ้นระบบ ล้วนอยู่ในขอบเขตที่ผมสามารถรับผิดชอบได้',
     clientValueTitle: 'สิ่งที่ลูกค้ามักได้รับจากการทำงานร่วมกัน',
     clientValues: [
-      'โครงสร้างข้อมูลที่ชัดขึ้นและ user flow ที่ใช้งานง่ายขึ้น',
+      'โครงสร้างข้อมูลที่ชัดเจนขึ้นและ user flow ที่ใช้งานง่ายขึ้น',
       'เครื่องมือฝั่งแอดมินที่ออกแบบตามการทำงานจริง',
-      'frontend ที่สะอาด ดูแลง่าย และขยายต่อได้',
-      'ระยะทางจากไอเดียไปสู่ระบบที่ใช้งานได้จริงสั้นลง',
+      'frontend ที่เรียบร้อย ดูแลง่าย และขยายต่อได้',
+      'ระยะทางจากไอเดียไปสู่ระบบที่ใช้งานได้จริงสั้นลงอย่างมีระบบ',
     ],
     skillsEyebrow: 'ทักษะ',
-    skillsTitle: 'เทคโนโลยีที่เลือกใช้จากประสบการณ์ส่งมอบงานจริง ไม่ใช่แค่ตามกระแส',
+    skillsTitle: 'เทคโนโลยีที่เลือกใช้จากประสบการณ์ส่งมอบงานจริง ไม่ใช่เพียงตามกระแส',
     contactEyebrow: 'ติดต่อ',
-    contactTitle: 'หากต้องการคนที่ช่วยทั้งพัฒนาและปรับงานให้ลงตัวไปพร้อมกับทีม',
+    contactTitle: 'หากคุณกำลังมองหาคนที่ช่วยพัฒนาและขับเคลื่อนงานไปพร้อมกับทีม',
     contactBody:
-      'ผมเปิดรับทั้งงาน freelance งานร่วมพัฒนาผลิตภัณฑ์ และโอกาส full-time ในทีมที่ให้ความสำคัญกับการส่งมอบงานที่เรียบร้อย ใช้งานได้จริง และมี UX ที่เหมาะสม',
+      'ผมเปิดรับทั้งงาน freelance งานร่วมพัฒนาผลิตภัณฑ์ และโอกาส full-time ในทีมที่ให้ความสำคัญกับการส่งมอบงานที่เรียบร้อย ใช้งานได้จริง และมีประสบการณ์ผู้ใช้ที่เหมาะสมกับบริบทของธุรกิจ',
     availabilityNow: 'ปัจจุบันพร้อมรับงาน freelance และพิจารณาโอกาส full-time ที่เหมาะสม',
-    remoteReady: 'สามารถทำงานร่วมกันแบบ remote และ async workflow ได้อย่างสะดวก',
+    remoteReady: 'สามารถทำงานร่วมกันแบบ remote และ async workflow ได้อย่างคล่องตัว',
     footerNote: 'พัฒนาด้วย Next.js และปรับใหม่เพื่อให้อ่านง่ายขึ้นและใช้งานเป็นมิตรมากขึ้น',
   },
 } as const;
@@ -480,6 +480,13 @@ export default function Portfolio() {
   const activeProjects = projects.filter((project) => project.featured);
   const archiveProjects = projects.filter((project) => !project.featured);
   const c = copy[locale];
+  const isThai = locale === 'th';
+  const sectionEyebrowClass = isThai
+    ? 'mb-4 text-sm font-medium tracking-[0.02em] text-cyan-300/85'
+    : 'mb-4 text-sm uppercase tracking-[0.28em] text-cyan-300/85';
+  const metaLabelClass = isThai
+    ? 'text-xs font-medium tracking-[0.02em] text-slate-400'
+    : 'text-xs uppercase tracking-[0.24em] text-slate-400';
 
   return (
     <div className={`relative min-h-screen ${locale === 'th' ? 'locale-th' : ''}`}>
@@ -552,11 +559,23 @@ export default function Portfolio() {
                 {c.availabilityBadge}
               </div>
 
-              <h1 className="font-display fade-up fade-delay-1 mt-6 text-5xl leading-[0.95] text-white sm:text-6xl lg:text-8xl">
+              <h1
+                className={`font-display fade-up fade-delay-1 mt-6 text-white ${
+                  isThai
+                    ? 'max-w-2xl text-4xl leading-[1.08] sm:text-5xl lg:text-[4.75rem]'
+                    : 'text-5xl leading-[0.95] sm:text-6xl lg:text-8xl'
+                }`}
+              >
                 {c.heroTitle}
               </h1>
 
-              <p className="fade-up fade-delay-2 mt-6 max-w-2xl text-balance text-lg leading-8 text-slate-300/86 lg:text-xl">
+              <p
+                className={`fade-up fade-delay-2 mt-6 text-balance text-slate-300/86 ${
+                  isThai
+                    ? 'max-w-2xl text-base leading-8 lg:text-[1.05rem]'
+                    : 'max-w-2xl text-lg leading-8 lg:text-xl'
+                }`}
+              >
                 {c.heroDescription}
               </p>
 
@@ -652,10 +671,14 @@ export default function Portfolio() {
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 flex flex-col gap-6 lg:mb-16 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
-                <div className="mb-4 text-sm uppercase tracking-[0.28em] text-cyan-300/85">
-                  {c.projectsEyebrow}
-                </div>
-                <h2 className="font-display text-4xl text-white sm:text-5xl lg:text-6xl">
+                <div className={sectionEyebrowClass}>{c.projectsEyebrow}</div>
+                <h2
+                  className={`font-display text-white ${
+                    isThai
+                      ? 'text-3xl leading-[1.18] sm:text-4xl lg:text-[3.4rem]'
+                      : 'text-4xl sm:text-5xl lg:text-6xl'
+                  }`}
+                >
                   {c.projectsTitle}
                 </h2>
               </div>
@@ -706,9 +729,7 @@ export default function Portfolio() {
                     </div>
 
                     <div className="mt-8 rounded-3xl border border-white/10 bg-black/10 p-5">
-                      <div className="text-xs uppercase tracking-[0.24em] text-slate-400">
-                        {c.whyItMatters}
-                      </div>
+                      <div className={metaLabelClass}>{c.whyItMatters}</div>
                       <p className="mt-3 text-sm leading-7 text-slate-200/85">{t(project.impact)}</p>
                     </div>
 
@@ -785,10 +806,14 @@ export default function Portfolio() {
         <section id="about" className="section-divider px-6 py-20 lg:px-8 lg:py-24">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="surface-card rounded-[30px] p-8 lg:p-10">
-              <div className="mb-4 text-sm uppercase tracking-[0.28em] text-cyan-300/85">
-                {c.aboutEyebrow}
-              </div>
-              <h2 className="font-display text-4xl text-white sm:text-5xl">{c.aboutTitle}</h2>
+              <div className={sectionEyebrowClass}>{c.aboutEyebrow}</div>
+              <h2
+                className={`font-display text-white ${
+                  isThai ? 'text-3xl leading-[1.2] sm:text-4xl lg:text-[3rem]' : 'text-4xl sm:text-5xl'
+                }`}
+              >
+                {c.aboutTitle}
+              </h2>
               <p className="mt-6 text-base leading-8 text-slate-300/84">{c.aboutBodyOne}</p>
               <p className="mt-4 text-base leading-8 text-slate-300/78">{c.aboutBodyTwo}</p>
 
@@ -821,7 +846,7 @@ export default function Portfolio() {
               ))}
 
               <article className="surface-card rounded-[28px] p-7">
-                <div className="text-sm uppercase tracking-[0.24em] text-cyan-300/80">
+                <div className={isThai ? 'text-sm font-medium tracking-[0.02em] text-cyan-300/80' : 'text-sm uppercase tracking-[0.24em] text-cyan-300/80'}>
                   {c.clientValueTitle}
                 </div>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -842,10 +867,14 @@ export default function Portfolio() {
         <section id="skills" className="section-divider px-6 py-20 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 max-w-3xl">
-              <div className="mb-4 text-sm uppercase tracking-[0.28em] text-cyan-300/85">
-                {c.skillsEyebrow}
-              </div>
-              <h2 className="font-display text-4xl text-white sm:text-5xl lg:text-6xl">
+              <div className={sectionEyebrowClass}>{c.skillsEyebrow}</div>
+              <h2
+                className={`font-display text-white ${
+                  isThai
+                    ? 'text-3xl leading-[1.18] sm:text-4xl lg:text-[3.2rem]'
+                    : 'text-4xl sm:text-5xl lg:text-6xl'
+                }`}
+              >
                 {c.skillsTitle}
               </h2>
             </div>
@@ -875,10 +904,14 @@ export default function Portfolio() {
         <section id="contact" className="section-divider px-6 py-20 lg:px-8 lg:py-24">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="surface-card rounded-[30px] p-8 lg:p-10">
-              <div className="mb-4 text-sm uppercase tracking-[0.28em] text-cyan-300/85">
-                {c.contactEyebrow}
-              </div>
-              <h2 className="font-display text-4xl text-white sm:text-5xl">{c.contactTitle}</h2>
+              <div className={sectionEyebrowClass}>{c.contactEyebrow}</div>
+              <h2
+                className={`font-display text-white ${
+                  isThai ? 'text-3xl leading-[1.2] sm:text-4xl lg:text-[3rem]' : 'text-4xl sm:text-5xl'
+                }`}
+              >
+                {c.contactTitle}
+              </h2>
               <p className="mt-6 text-base leading-8 text-slate-300/82">{c.contactBody}</p>
 
               <div className="mt-8 rounded-[26px] border border-emerald-400/20 bg-emerald-400/8 p-5">
