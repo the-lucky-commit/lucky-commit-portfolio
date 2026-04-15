@@ -482,7 +482,7 @@ export default function Portfolio() {
   const c = copy[locale];
 
   return (
-    <div className="relative min-h-screen">
+    <div className={`relative min-h-screen ${locale === 'th' ? 'locale-th' : ''}`}>
       <nav
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
           scrolled

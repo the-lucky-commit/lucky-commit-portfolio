@@ -81,6 +81,14 @@ img {
     font-family: var(--font-space-grotesk), sans-serif;
   }
 
+  .locale-th {
+    font-family: var(--font-prompt), sans-serif;
+  }
+
+  .locale-th .font-display {
+    font-family: var(--font-prompt), sans-serif;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
