@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import {
   ArrowRight,
@@ -49,10 +48,10 @@ const metrics = [
     },
   },
   {
-    value: '3',
+    value: 'Ops',
     label: {
-      en: 'Active workspaces in progress now',
-      th: 'โปรเจกต์ที่กำลังพัฒนาอยู่ในขณะนี้',
+      en: 'Systems designed for real operational use',
+      th: 'ระบบที่ออกแบบเพื่อรองรับการใช้งานจริง',
     },
   },
   {
@@ -140,8 +139,8 @@ const projects = [
     },
     year: '2026',
     status: {
-      en: 'Active workspace',
-      th: 'กำลังพัฒนาและดูแลต่อเนื่อง',
+      en: 'Live platform',
+      th: 'แพลตฟอร์มที่ใช้งานจริง',
     },
     summary: {
       en: 'Clothing rental platform covering membership tiers, checkout, PromptPay verification, and admin workflows for inventory, orders, and shipping.',
@@ -163,8 +162,8 @@ const projects = [
     },
     year: '2026',
     status: {
-      en: 'Active migration',
-      th: 'อยู่ระหว่างย้ายระบบ',
+      en: 'Ongoing migration',
+      th: 'อยู่ระหว่างพัฒนาต่อเนื่อง',
     },
     summary: {
       en: 'Ongoing migration from static pages to a React frontend while keeping the working backend and legacy routes online during the transition.',
@@ -186,8 +185,8 @@ const projects = [
     },
     year: '2026',
     status: {
-      en: 'Active build',
-      th: 'กำลังพัฒนา',
+      en: 'Campaign build',
+      th: 'งานพัฒนาแคมเปญ',
     },
     summary: {
       en: 'Promotional storefront for premium mini soft cakes with a flavour catalog, delivery coverage messaging, and WhatsApp-led ordering flow for Malaysia-wide customers.',
@@ -208,8 +207,8 @@ const projects = [
     },
     year: '2025',
     status: {
-      en: 'Archived highlight',
-      th: 'ผลงานเด่นจาก archive',
+      en: 'Live platform',
+      th: 'แพลตฟอร์มที่ใช้งานจริง',
     },
     summary: {
       en: 'Production property platform with listing search, account system, media management, and an analytics-ready back-office for real-estate operations.',
@@ -230,8 +229,8 @@ const projects = [
     },
     year: '2025',
     status: {
-      en: 'Archived build',
-      th: 'โปรเจกต์ใน archive',
+      en: 'Product platform',
+      th: 'แพลตฟอร์มสินค้า',
     },
     summary: {
       en: 'Product platform with filtering, quote and order flow, account system, admin panels, and technical document distribution for engineering customers.',
@@ -314,6 +313,49 @@ const contactLinks = [
   },
 ];
 
+const heroCapabilities = [
+  {
+    title: {
+      en: 'Product planning',
+      th: 'วางโครงงานเชิงผลิตภัณฑ์',
+    },
+    description: {
+      en: 'Translate business goals into clear scope and structure.',
+      th: 'แปลงโจทย์ธุรกิจให้เป็นขอบเขตงานและโครงสร้างที่ชัดเจน',
+    },
+  },
+  {
+    title: {
+      en: 'UX and interface',
+      th: 'ออกแบบ UX และหน้าตาใช้งาน',
+    },
+    description: {
+      en: 'Build interfaces that feel polished and reduce friction.',
+      th: 'ออกแบบหน้าจอที่เรียบร้อย ใช้งานง่าย และลดความสับสน',
+    },
+  },
+  {
+    title: {
+      en: 'Operational workflows',
+      th: 'จัดการ workflow หลังบ้าน',
+    },
+    description: {
+      en: 'Support the actual work behind orders, content, and admin tasks.',
+      th: 'รองรับงานจริงของทีม ไม่ว่าจะเป็นออเดอร์ คอนเทนต์ หรือแอดมิน',
+    },
+  },
+  {
+    title: {
+      en: 'Deployment and support',
+      th: 'ขึ้นระบบและดูแลต่อเนื่อง',
+    },
+    description: {
+      en: 'Handle deployment, fixes, and post-launch refinement.',
+      th: 'ดูแลการขึ้นระบบ การแก้ปัญหา และการปรับปรุงหลังเปิดใช้งาน',
+    },
+  },
+];
+
 const copy = {
   en: {
     languageLabel: 'Language',
@@ -326,16 +368,17 @@ const copy = {
     heroTags: ['Next.js', 'TypeScript', 'Node.js', 'Business systems'],
     heroPrimaryCta: 'Explore projects',
     heroSecondaryCta: 'Start a conversation',
-    profileAlt: 'Lucky Commit profile illustration',
+    panelEyebrow: 'Professional Focus',
+    panelTitle: 'A delivery style built around clarity, usability, and operational fit.',
+    panelDescription:
+      'I work across planning, interface design, backend integration, and production rollout so the final product is not only polished, but practical for the team using it.',
     basedIn: 'Based in',
-    workingStyle: 'Working style',
-    workingStyleValue: 'Practical, fast, detail-aware',
-    projectsEyebrow: 'Selected Work',
-    projectsTitle: 'Projects that solve real operational problems.',
+    workingStyle: 'Engagement style',
+    workingStyleValue: 'Freelance, product collaboration, and long-term improvement work',
+    projectsEyebrow: 'Selected Projects',
+    projectsTitle: 'Representative work across current delivery and past production builds.',
     projectsIntro:
-      'This section now reflects the projects currently sitting in my active workspace, plus a few archive highlights that still represent the kind of systems I build.',
-    activeNow: 'Active now',
-    selectedArchive: 'Selected archive',
+      'This section brings together ongoing delivery work and representative past builds to show the kind of systems, interfaces, and workflows I typically handle.',
     whyItMatters: 'Why it matters',
     visitProject: 'Visit project',
     availableOnRequest: 'Available on request',
@@ -379,16 +422,17 @@ const copy = {
     heroTags: ['Next.js', 'TypeScript', 'Node.js', 'ระบบธุรกิจ'],
     heroPrimaryCta: 'ดูผลงาน',
     heroSecondaryCta: 'เริ่มพูดคุย',
-    profileAlt: 'ภาพโปรไฟล์ Lucky Commit',
+    panelEyebrow: 'Professional Focus',
+    panelTitle: 'แนวทางการทำงานที่ให้ความสำคัญกับความชัดเจน การใช้งานจริง และความเหมาะสมกับบริบทธุรกิจ',
+    panelDescription:
+      'ผมดูแลงานได้ตั้งแต่การวางโครงผลิตภัณฑ์ การออกแบบหน้าตาใช้งาน การเชื่อมต่อระบบหลังบ้าน ไปจนถึงการนำขึ้นใช้งานจริง เพื่อให้งานที่ส่งมอบไม่เพียงดูดี แต่ยังพร้อมต่อการใช้งานจริงของทีม',
     basedIn: 'ที่อยู่ปัจจุบัน',
-    workingStyle: 'ลักษณะการทำงาน',
-    workingStyleValue: 'ทำงานเป็นระบบ สื่อสารชัดเจน และใส่ใจรายละเอียด',
-    projectsEyebrow: 'ผลงานที่คัดมา',
-    projectsTitle: 'ผลงานที่พัฒนาจากโจทย์การใช้งานจริงของธุรกิจ',
+    workingStyle: 'รูปแบบการทำงาน',
+    workingStyleValue: 'รับงาน freelance งานพัฒนาร่วมกับทีม และงานปรับปรุงระบบต่อเนื่อง',
+    projectsEyebrow: 'Selected Projects',
+    projectsTitle: 'ผลงานตัวอย่างจากงานที่กำลังดูแลและโปรเจกต์ที่เคยส่งมอบใน production',
     projectsIntro:
-      'ผลงานส่วนนี้คัดเลือกจากโปรเจกต์ที่กำลังพัฒนาอยู่ในปัจจุบัน และงานสำคัญจาก archive เพื่อสะท้อนแนวทางการออกแบบระบบและการส่งมอบงานที่ผมถนัด',
-    activeNow: 'กำลังพัฒนาอยู่ตอนนี้',
-    selectedArchive: 'ผลงานจาก archive ที่ยังอยากนำเสนอ',
+      'ส่วนนี้รวบรวมทั้งงานที่กำลังพัฒนาอยู่ในปัจจุบันและงานสำคัญที่เคยส่งมอบ เพื่อสะท้อนลักษณะของระบบ อินเทอร์เฟซ และ workflow ที่ผมถนัดในการดูแล',
     whyItMatters: 'คุณค่าของงานชิ้นนี้',
     visitProject: 'เปิดดูโปรเจกต์',
     availableOnRequest: 'สามารถขอดูรายละเอียดเพิ่มเติมได้',
@@ -477,8 +521,7 @@ export default function Portfolio() {
   }, [locale]);
 
   const t = (value: LocalizedText) => value[locale];
-  const activeProjects = projects.filter((project) => project.featured);
-  const archiveProjects = projects.filter((project) => !project.featured);
+  const allProjects = [...projects].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
   const c = copy[locale];
   const isThai = locale === 'th';
   const sectionEyebrowClass = isThai
@@ -626,37 +669,58 @@ export default function Portfolio() {
             </div>
 
             <div className="fade-up fade-delay-2">
-              <div className="surface-card glow-ring float-slow relative mx-auto max-w-xl overflow-hidden rounded-[32px] p-5">
+              <div className="surface-card glow-ring float-slow relative mx-auto max-w-xl overflow-hidden rounded-[32px] p-6">
                 <div className="absolute -left-10 top-10 h-32 w-32 rounded-full bg-cyan-300/20 blur-3xl" />
                 <div className="absolute -right-10 bottom-8 h-36 w-36 rounded-full bg-sky-400/20 blur-3xl" />
 
-                <div className="relative overflow-hidden rounded-[26px] border border-white/10 bg-slate-950/70">
-                  <div className="relative aspect-[0.95]">
-                    <Image
-                      src="/profile-3326.jpg"
-                      alt={c.profileAlt}
-                      fill
-                      priority
-                      className="object-cover"
-                    />
+                <div className="relative rounded-[26px] border border-white/10 bg-slate-950/72 p-6">
+                  <div className="rounded-3xl border border-cyan-300/10 bg-gradient-to-br from-cyan-300/8 via-transparent to-sky-300/8 p-5">
+                    <div className={isThai ? 'text-sm font-medium tracking-[0.02em] text-cyan-200/85' : 'text-xs uppercase tracking-[0.24em] text-cyan-200/85'}>
+                      {c.panelEyebrow}
+                    </div>
+                    <h2
+                      className={`mt-4 font-display text-white ${
+                        isThai ? 'text-2xl leading-[1.3] sm:text-[2rem]' : 'text-3xl leading-tight'
+                      }`}
+                    >
+                      {c.panelTitle}
+                    </h2>
+                    <p className="mt-4 text-sm leading-7 text-slate-300/82 sm:text-base">
+                      {c.panelDescription}
+                    </p>
                   </div>
 
-                  <div className="grid gap-4 border-t border-white/10 bg-slate-950/75 p-6 sm:grid-cols-2">
-                    <div>
-                      <div className="text-xs uppercase tracking-[0.24em] text-slate-400">
-                        {c.basedIn}
+                  <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                    {heroCapabilities.map((item) => (
+                      <div
+                        key={item.title.en}
+                        className="rounded-3xl border border-white/10 bg-white/5 p-5"
+                      >
+                        <div className="flex items-center gap-3">
+                          <span className="flex h-9 w-9 items-center justify-center rounded-2xl bg-cyan-300/12 text-cyan-200">
+                            <BadgeCheck size={16} />
+                          </span>
+                          <div className="text-base font-medium text-white">{t(item.title)}</div>
+                        </div>
+                        <p className="mt-4 text-sm leading-7 text-slate-300/78">
+                          {t(item.description)}
+                        </p>
                       </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-5 grid gap-4 border-t border-white/10 pt-5 sm:grid-cols-2">
+                    <div>
+                      <div className={metaLabelClass}>{c.basedIn}</div>
                       <div className="mt-2 flex items-center gap-2 text-sm text-slate-100">
                         <MapPin size={15} className="text-cyan-300" />
                         Khlung, Chanthaburi, Thailand
                       </div>
                     </div>
                     <div>
-                      <div className="text-xs uppercase tracking-[0.24em] text-slate-400">
-                        {c.workingStyle}
-                      </div>
+                      <div className={metaLabelClass}>{c.workingStyle}</div>
                       <div className="mt-2 flex items-center gap-2 text-sm text-slate-100">
-                        <BadgeCheck size={15} className="text-cyan-300" />
+                        <Briefcase size={15} className="text-cyan-300" />
                         {c.workingStyleValue}
                       </div>
                     </div>
@@ -685,77 +749,13 @@ export default function Portfolio() {
               <p className="max-w-xl text-base leading-7 text-slate-300/78">{c.projectsIntro}</p>
             </div>
 
-            <div className="mb-6 text-sm uppercase tracking-[0.24em] text-slate-400">
-              {c.activeNow}
-            </div>
-            <div className="grid gap-6 lg:grid-cols-2">
-              {activeProjects.map((project) => (
-                <article
-                  key={project.title}
-                  className="surface-card glow-ring group relative overflow-hidden rounded-[30px] p-8 transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div className="absolute right-0 top-0 h-36 w-36 rounded-full bg-cyan-300/10 blur-3xl transition-transform duration-500 group-hover:scale-125" />
-                  <div className="relative">
-                    <div className="flex flex-wrap items-center gap-3 text-sm text-slate-300/75">
-                      <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1">
-                        {t(project.category)}
-                      </span>
-                      <span>{project.year}</span>
-                      <span className="rounded-full bg-cyan-300/12 px-3 py-1 text-cyan-200">
-                        {t(project.status)}
-                      </span>
-                    </div>
-
-                    <div className="mt-8 flex items-start justify-between gap-6">
-                      <div>
-                        <h3 className="font-display text-3xl text-white sm:text-4xl">
-                          {project.title}
-                        </h3>
-                        <p className="mt-4 max-w-xl text-base leading-7 text-slate-300/82">
-                          {t(project.summary)}
-                        </p>
-                      </div>
-                      {project.url ? (
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`${c.visitProject}: ${project.title}`}
-                          className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-cyan-300 hover:text-slate-950"
-                        >
-                          <ArrowUpRight size={18} />
-                        </a>
-                      ) : null}
-                    </div>
-
-                    <div className="mt-8 rounded-3xl border border-white/10 bg-black/10 p-5">
-                      <div className={metaLabelClass}>{c.whyItMatters}</div>
-                      <p className="mt-3 text-sm leading-7 text-slate-200/85">{t(project.impact)}</p>
-                    </div>
-
-                    <div className="mt-8 flex flex-wrap gap-2">
-                      {project.tech.map((tech) => (
-                        <span
-                          key={tech}
-                          className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs text-slate-200/82"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            <div className="mb-6 mt-14 text-sm uppercase tracking-[0.24em] text-slate-400">
-              {c.selectedArchive}
-            </div>
             <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {archiveProjects.map((project) => (
+              {allProjects.map((project) => (
                 <article
                   key={project.title}
-                  className="surface-card group rounded-[28px] p-6 transition-transform duration-300 hover:-translate-y-1"
+                  className={`surface-card group rounded-[28px] p-6 transition-transform duration-300 hover:-translate-y-1 ${
+                    project.featured ? 'xl:col-span-1' : ''
+                  }`}
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="text-sm text-slate-300/74">
@@ -768,7 +768,9 @@ export default function Portfolio() {
                   </div>
 
                   <div className="mt-6">
-                    <h3 className="font-display text-2xl text-white">{project.title}</h3>
+                    <h3 className={`font-display text-white ${project.featured ? 'text-[1.85rem]' : 'text-2xl'}`}>
+                      {project.title}
+                    </h3>
                     <p className="mt-3 text-sm leading-7 text-slate-300/82">{t(project.summary)}</p>
                     <p className="mt-4 text-sm leading-7 text-slate-400">{t(project.impact)}</p>
                   </div>
