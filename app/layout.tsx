@@ -1,49 +1,58 @@
-import type { Metadata } from 'next'
-import { Manrope, Prompt, Space_Grotesk } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Inter, JetBrains_Mono, Prompt } from 'next/font/google';
+import './globals.css';
 
-const manrope = Manrope({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-manrope',
-})
+  variable: '--font-inter',
+});
 
-const spaceGrotesk = Space_Grotesk({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
-})
+  variable: '--font-jetbrains-mono',
+});
 
 const prompt = Prompt({
   subsets: ['latin', 'thai'],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-prompt',
-})
+});
 
 export const metadata: Metadata = {
-  title: 'lucky.commit | Full-stack Developer',
+  title: 'lucky.commit — Creative Developer & Systems Builder',
   description:
-    'Full-stack developer portfolio focused on production-ready web products, business systems, and polished digital experiences.',
+    'I design and build digital products that work. Full-stack developer creating production-ready platforms with artistic taste and strong implementation skills. Based in Thailand.',
   keywords: [
+    'creative developer',
+    'full-stack developer',
     'web developer',
-    'full-stack',
     'React',
     'Next.js',
     'TypeScript',
     'portfolio',
-    'frontend',
-    'backend',
+    'systems builder',
+    'product developer',
+    'UI/UX',
   ],
+  openGraph: {
+    title: 'lucky.commit — Creative Developer & Systems Builder',
+    description: 'I design and build digital products that work.',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${spaceGrotesk.variable} ${prompt.variable}`}>
+      <body
+        className={`${inter.variable} ${jetbrainsMono.variable} ${prompt.variable}`}
+      >
         {children}
       </body>
     </html>
-  )
+  );
 }
